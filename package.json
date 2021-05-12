@@ -5,7 +5,7 @@
   "description": "[![Actions Status](https://github.com/ZoricmaTs/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ZoricmaTs/frontend-project-lvl1/actions)",
   "main": "bin/brain-games.js",
   "bin": {
-    "snippet": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ZoricmaTs/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/ZoricmaTs/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/ZoricmaTs/frontend-project-lvl1#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
