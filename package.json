@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/ZoricmaTs/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ZoricmaTs/frontend-project-lvl1/actions)",
+  "main": "bin/brain-games.js",
+  "bin": {
+    "snippet": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZoricmaTs/frontend-project-lvl1.git"
+  },
+  "author": "Zori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZoricmaTs/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/ZoricmaTs/frontend-project-lvl1#readme"
+}
