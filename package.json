@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/ZoricmaTs/frontend-project-lvl1#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
   }
 }
