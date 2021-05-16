@@ -17,13 +17,12 @@ const getRandomInt = () => {
   return Math.floor(Math.random() * maxNum);
 };
 
-
 const question = () => {
   const userResp = readlineSync.question('Your answer: ');
   return userResp;
 };
 
-export const checkAnswer = () => {
+export default () => {
   console.log(`Hello, ${user}!`);
   console.log(gameDescription);
   const round = 3;
@@ -46,7 +45,7 @@ export const checkAnswer = () => {
     }
 
     if (correctAnswersCount === round) {
-      console.log(`Congratulations, ${user}!`)
+      console.log(`Congratulations, ${user}!`);
     }
   }
 };
