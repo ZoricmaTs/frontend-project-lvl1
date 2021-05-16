@@ -8,8 +8,6 @@ const userName = () => {
 };
 const user = userName();
 
-const answerIsCorrect = 'Correct!';
-const answerIsIncorrect = `'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${user}!`;
 const isEven = (num) => num % 2 === 0;
 
 const getRandomInt = () => {
@@ -34,12 +32,14 @@ export default () => {
 
     console.log(`Question: ${num}`);
     const UserAnswer = question();
+    const answerIsCorrect = 'Correct!';
 
     if ((isEvenNum && UserAnswer === 'yes') || (!isEvenNum && UserAnswer === 'no')) {
       console.log(answerIsCorrect);
       count += 1;
       correctAnswersCount += 1;
     } else {
+      const answerIsIncorrect = `'${UserAnswer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${user}!`;
       console.log(answerIsIncorrect);
       count += 3;
     }
