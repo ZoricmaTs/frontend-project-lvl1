@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 import getRandomInt from './random-num.js';
-import game from './game.js';
+import game from './index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 

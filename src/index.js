@@ -25,7 +25,6 @@ export default (gameDescription, getData) => {
     const data = getData();
     const question = car(data);
     const correctValue = cdr(data);
-    console.log('question', question, correctValue);
     console.log(`Question: ${question}`);
     const UserAnswer = userAnswer();
     const answerIsCorrect = 'Correct!';
