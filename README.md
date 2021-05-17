@@ -14,3 +14,12 @@
 ```make brain-even```
 
 [![asciicast](https://asciinema.org/a/ceETWOfx87P0PAiC6SY3fDVkV.png)](https://asciinema.org/a/ceETWOfx87P0PAiC6SY3fDVkV)
+
+### start game "brain-calc":
+```make brain-calc```
+
+[![asciicast](https://asciinema.org/a/yOyTEFBATpG8rbXQ2ey6EdFDX.png)](https://asciinema.org/a/yOyTEFBATpG8rbXQ2ey6EdFDX)
+
+
+
+
