@@ -1,5 +1,5 @@
-import getRandomInt from './random-num.js';
 import { cons } from '@hexlet/pairs';
+import getRandomInt from './random-num.js';
 import game from './game.js';
 
 const gameDescription = 'What is the result of the expression?';
@@ -7,17 +7,22 @@ const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const calculate = (a, b, operator) => {
+  let result;
   switch (operator) {
     case '+':
-      return a + b;
+      result = a + b;
       break;
     case '-':
-      return a - b;
+      result = a - b;
       break;
     case '*':
-      return a * b;
+      result = a * b;
       break;
+    default:
+      result = 0;
   }
+
+  return result;
 };
 
 const createBrainCalc = () => {
@@ -31,4 +36,4 @@ const createBrainCalc = () => {
 
 export default () => {
   game(gameDescription, createBrainCalc);
-}
+};

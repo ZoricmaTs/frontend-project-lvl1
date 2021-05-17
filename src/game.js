@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 
 const round = 3;
@@ -14,7 +14,6 @@ const userAnswer = () => {
   const userResp = readlineSync.question('Your answer: ');
   return userResp;
 };
-
 
 export default (gameDescription, getData) => {
   console.log('Welcome to the Brain Games!');

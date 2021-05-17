@@ -1,6 +1,6 @@
+import { cons } from '@hexlet/pairs';
 import getRandomInt from './random-num.js';
-import { cons } from "@hexlet/pairs";
-import game from "./game.js";
+import game from './game.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -15,4 +15,4 @@ const createBrainEven = () => {
 
 export default () => {
   game(gameDescription, createBrainEven);
-}
+};
