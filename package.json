@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/ZoricmaTs/frontend-project-lvl1#readme",
   "dependencies": {
-    "@hexlet/pairs": "^1.1.1",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },

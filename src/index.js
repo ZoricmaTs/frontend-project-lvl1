@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-import { car, cdr } from '@hexlet/pairs';
 
 const round = 3;
 
@@ -22,9 +21,9 @@ export default (gameDescription, getData) => {
   let correctAnswersCount = 0;
   let count = 0;
   while (round > count) {
-    const data = getData();
-    const question = car(data);
-    const correctValue = cdr(data);
+    const [questionValue, correctValueValue] = getData();
+    const question = questionValue;
+    const correctValue = correctValueValue;
     console.log(`Question: ${question}`);
     const UserAnswer = userAnswer();
     const answerIsCorrect = 'Correct!';

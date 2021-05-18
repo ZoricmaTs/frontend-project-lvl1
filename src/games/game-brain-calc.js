@@ -1,4 +1,3 @@
-import { cons } from '@hexlet/pairs';
 import getRandomInt from '../random-num.js';
 import game from '../index.js';
 
@@ -31,7 +30,7 @@ const createBrainCalc = () => {
   const operator = operators[getRandomInt(0, operators.length - 1)];
   const result = String(calculate(a, b, operator));
   const question = `${a} ${operator} ${b}`;
-  return cons(question, result);
+  return [question, result];
 };
 
 export default () => {

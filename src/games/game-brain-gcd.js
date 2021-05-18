@@ -1,4 +1,3 @@
-import { cons } from '@hexlet/pairs';
 import getRandomInt from '../random-num.js';
 import game from '../index.js';
 
@@ -23,7 +22,7 @@ const createBrainGcd = () => {
   const b = getRandomInt(-100, 100);
   const result = String(gcd(a, b));
   const question = `${a} ${b}`;
-  return cons(question, result);
+  return [question, result];
 };
 
 export default () => {

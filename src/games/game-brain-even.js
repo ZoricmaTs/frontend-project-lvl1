@@ -1,4 +1,3 @@
-import { cons } from '@hexlet/pairs';
 import getRandomInt from '../random-num.js';
 import game from '../index.js';
 
@@ -10,7 +9,7 @@ const createBrainEven = () => {
   const num = getRandomInt(0, 100);
   const result = isEven(num) ? 'yes' : 'no';
   const question = String(num);
-  return cons(question, result);
+  return [question, result];
 };
 
 export default () => {
