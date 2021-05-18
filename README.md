@@ -20,6 +20,10 @@
 
 [![asciicast](https://asciinema.org/a/yOyTEFBATpG8rbXQ2ey6EdFDX.png)](https://asciinema.org/a/yOyTEFBATpG8rbXQ2ey6EdFDX)
 
+### start game "brain-gcd":
+```make brain-gcd```
+
+[![asciicast](https://asciinema.org/a/5grDmO9oYcMuKuOnQNGoHwA4i.png)](https://asciinema.org/a/5grDmO9oYcMuKuOnQNGoHwA4i)
 
 
 
