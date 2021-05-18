@@ -27,3 +27,9 @@
 ```make brain-progression```
 
 [![asciicast](https://asciinema.org/a/PyguNew6Q7rQ7qnvv0ZQRZE4B.png)](https://asciinema.org/a/PyguNew6Q7rQ7qnvv0ZQRZE4B)
+
+### start game "brain-prime":
+```make brain-prime```
+
+[![asciicast](https://asciinema.org/a/1Le8s7Kv7N9U0tfbTYCgetmDR.png)](https://asciinema.org/a/1Le8s7Kv7N9U0tfbTYCgetmDR)
+
