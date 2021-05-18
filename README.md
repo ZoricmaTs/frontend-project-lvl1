@@ -4,8 +4,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8bfd19a110ea7b457027/maintainability)](https://codeclimate.com/github/ZoricmaTs/frontend-project-lvl1/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/8bfd19a110ea7b457027/test_coverage)](https://codeclimate.com/github/ZoricmaTs/frontend-project-lvl1/test_coverage)
-
 ## install game:
 
 ```make install```
@@ -25,5 +23,7 @@
 
 [![asciicast](https://asciinema.org/a/5grDmO9oYcMuKuOnQNGoHwA4i.png)](https://asciinema.org/a/5grDmO9oYcMuKuOnQNGoHwA4i)
 
+### start game "brain-progression":
+```make brain-progression```
 
-
+[![asciicast](https://asciinema.org/a/PyguNew6Q7rQ7qnvv0ZQRZE4B.png)](https://asciinema.org/a/PyguNew6Q7rQ7qnvv0ZQRZE4B)
