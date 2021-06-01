@@ -21,7 +21,7 @@ const progression = (firstNum, d, count, hiddenItem) => {
 };
 
 const createBrainProgression = () => {
-  const firstNum = getRandomInt(-100, 100);
+  const firstNum = getRandomInt(0, 100);
   const d = getRandomInt(0, 5);
   const count = getRandomInt(5, 10);
   const hiddenItem = getRandomInt(0, count);
