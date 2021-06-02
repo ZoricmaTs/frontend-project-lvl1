@@ -7,6 +7,7 @@ const progression = (firstNum, d, count, hiddenItem) => {
   const array = [];
   let item = firstNum;
   let hiddenValue = 0;
+
   for (let i = 0; i < count; i += 1) {
     if (i === hiddenItem) {
       hiddenValue = item;
@@ -21,13 +22,15 @@ const progression = (firstNum, d, count, hiddenItem) => {
 };
 
 const createBrainProgression = () => {
-  const firstNum = getRandomInt(0, 100);
-  const d = getRandomInt(0, 5);
-  const count = getRandomInt(5, 10);
-  const hiddenItem = getRandomInt(0, count);
-  const [array, hiddenValue] = progression(firstNum, d, count, hiddenItem);
+  const firstNum = getRandomInt(0, 50);
+  const diff = getRandomInt(1, 5);
+  const count = 10;
+  const hiddenIndex = getRandomInt(0, count - 1);
+
+  const [array, hiddenValue] = progression(firstNum, diff, count, hiddenIndex);
   const result = String(hiddenValue);
   const question = array.join(' ');
+
   return [question, result];
 };
 
