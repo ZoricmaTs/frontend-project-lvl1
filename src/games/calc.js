@@ -1,30 +1,24 @@
-import getRandomInt from '../random-num.js';
+import getRandomInt from '../utils.js';
 import game from '../index.js';
 
-const gameDescription = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
 const calculate = (a, b, operator) => {
-  let result;
   switch (operator) {
     case '+':
-      result = a + b;
-      break;
+      return a + b;
     case '-':
-      result = a - b;
-      break;
+      return a - b;
     case '*':
-      result = a * b;
-      break;
+      return a * b;
     default:
-      result = 0;
+      return 0;
   }
-
-  return result;
 };
 
-const createBrainCalc = () => {
+const generateRound = () => {
   const a = getRandomInt(0, 100);
   const b = getRandomInt(0, 100);
   const operator = operators[getRandomInt(0, operators.length - 1)];
@@ -34,5 +28,5 @@ const createBrainCalc = () => {
 };
 
 export default () => {
-  game(gameDescription, createBrainCalc);
+  game(description, generateRound);
 };

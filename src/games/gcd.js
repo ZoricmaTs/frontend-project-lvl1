@@ -1,7 +1,7 @@
-import getRandomInt from '../random-num.js';
+import getRandomInt from '../utils.js';
 import game from '../index.js';
 
-const gameDescription = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   const aNum = Math.abs(a);
@@ -17,7 +17,7 @@ const gcd = (a, b) => {
   return iter(Math.min(aNum, bNum));
 };
 
-const createBrainGcd = () => {
+const generateRound = () => {
   const a = getRandomInt(-100, 100);
   const b = getRandomInt(-100, 100);
   const result = String(gcd(a, b));
@@ -26,5 +26,5 @@ const createBrainGcd = () => {
 };
 
 export default () => {
-  game(gameDescription, createBrainGcd);
+  game(description, generateRound);
 };

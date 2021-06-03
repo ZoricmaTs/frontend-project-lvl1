@@ -1,7 +1,7 @@
-import getRandomInt from '../random-num.js';
+import getRandomInt from '../utils.js';
 import game from '../index.js';
 
-const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -17,7 +17,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const createBrainPrime = () => {
+const generateRound = () => {
   const num = getRandomInt(0, 100);
   const result = isPrime(num) ? 'yes' : 'no';
   const question = String(num);
@@ -25,5 +25,5 @@ const createBrainPrime = () => {
 };
 
 export default () => {
-  game(gameDescription, createBrainPrime);
+  game(description, generateRound);
 };

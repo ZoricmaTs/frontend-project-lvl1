@@ -1,9 +1,9 @@
-import getRandomInt from '../random-num.js';
+import getRandomInt from '../utils.js';
 import game from '../index.js';
 
-const gameDescription = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-const progression = (firstNum, d, count, hiddenItem) => {
+const progression = (firstNum, diff, count, hiddenItem) => {
   const array = [];
   let item = firstNum;
   let hiddenValue = 0;
@@ -15,13 +15,13 @@ const progression = (firstNum, d, count, hiddenItem) => {
     } else {
       array.push(item);
     }
-    item += d;
+    item += diff;
   }
 
   return [array, hiddenValue];
 };
 
-const createBrainProgression = () => {
+const generateRound = () => {
   const firstNum = getRandomInt(0, 50);
   const diff = getRandomInt(1, 5);
   const count = 10;
@@ -35,5 +35,5 @@ const createBrainProgression = () => {
 };
 
 export default () => {
-  game(gameDescription, createBrainProgression);
+  game(description, generateRound);
 };
