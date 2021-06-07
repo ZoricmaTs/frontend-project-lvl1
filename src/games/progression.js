@@ -4,7 +4,7 @@ import game from '../index.js';
 const description = 'What number is missing in the progression?';
 
 const progression = (firstNum, diff, count) => {
-  const array = [ firstNum ];
+  const array = [firstNum];
 
   for (let i = 1; i < count; i += 1) {
     array.push(firstNum + (diff * i));
