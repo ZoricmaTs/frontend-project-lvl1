@@ -11,10 +11,8 @@ export default (gameDescription, getData) => {
   let correctAnswersCount = 0;
   let count = 0;
   while (rounds > count) {
-    const [questionValue, correctValueValue] = getData();
-    const question = questionValue;
-    const correctValue = correctValueValue;
-    console.log(`Question: ${question}`);
+    const [questionValue, correctValue] = getData();
+    console.log(`Question: ${questionValue}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const answerIsCorrect = 'Correct!';
 

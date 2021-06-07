@@ -18,11 +18,10 @@ const calculate = (a, b, operator) => {
   }
 };
 
-const indexOperator = operators[getRandomInt(0, operators.length - 1)];
-
 const generateRound = () => {
   const a = getRandomInt(0, 100);
   const b = getRandomInt(0, 100);
+  const indexOperator = operators[getRandomInt(0, operators.length - 1)];
   const result = String(calculate(a, b, indexOperator));
   const question = `${a} ${indexOperator} ${b}`;
   return [question, result];
