@@ -3,29 +3,29 @@ import game from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const progression = (firstNum, diff, count) => {
-  const array = [firstNum];
+const getProgression = (first, diff, count) => {
+  const arr = [first];
 
   for (let i = 1; i < count; i += 1) {
-    array.push(firstNum + (diff * i));
+    arr.push(first + (diff * i));
   }
 
-  return array;
+  return arr;
 };
 
 const generateRound = () => {
-  const firstNum = getRandomInt(0, 50);
+  const first = getRandomInt(0, 50);
   const diff = getRandomInt(1, 5);
   const count = getRandomInt(5, 10);
 
-  const array = progression(firstNum, diff, count);
+  const progression = getProgression(first, diff, count);
 
   const hiddenIndex = getRandomInt(0, count - 1);
-  const hiddenValue = array[hiddenIndex];
+  const hiddenValue = progression[hiddenIndex];
   const result = String(hiddenValue);
 
-  array[hiddenIndex] = '..';
-  const question = array.join(' ');
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
 
   return [question, result];
 };
