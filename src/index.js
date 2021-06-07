@@ -15,15 +15,15 @@ export default (gameDescription, getData) => {
     const question = questionValue;
     const correctValue = correctValueValue;
     console.log(`Question: ${question}`);
-    const UserAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
     const answerIsCorrect = 'Correct!';
 
-    if (UserAnswer === correctValue) {
+    if (userAnswer === correctValue) {
       console.log(answerIsCorrect);
       count += 1;
       correctAnswersCount += 1;
     } else {
-      const answerIsIncorrect = `'${UserAnswer}' is wrong answer ;(. Correct answer was '${correctValue}'.\nLet's try again, ${user}!`;
+      const answerIsIncorrect = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctValue}'.\nLet's try again, ${user}!`;
       console.log(answerIsIncorrect);
       count += 3;
     }
