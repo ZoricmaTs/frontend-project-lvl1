@@ -8,7 +8,7 @@ const gcd = (a, b) => {
     return a;
   }
 
-  return gcd(b, a 
+  return gcd(b, a % b);
 };
 
 const generateRound = () => {
