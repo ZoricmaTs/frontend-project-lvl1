@@ -4,14 +4,11 @@ import game from '../index.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
-  const aNum = Math.abs(a);
-  const bNum = Math.abs(b);
+  if (!b) {
+    return a;
+  }
 
-    if (!bNum) {
-      return aNum;
-    }
-
-  return gcd(bNum, aNum % bNum);
+  return gcd(b, a 
 };
 
 const generateRound = () => {
