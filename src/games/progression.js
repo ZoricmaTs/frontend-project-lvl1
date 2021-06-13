@@ -1,5 +1,5 @@
 import getRandomInt from '../utils.js';
-import game from '../index.js';
+import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -31,5 +31,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  game(description, generateRound);
+  startGame(description, generateRound);
 };

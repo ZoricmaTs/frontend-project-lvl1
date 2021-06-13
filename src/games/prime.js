@@ -1,5 +1,5 @@
 import getRandomInt from '../utils.js';
-import game from '../index.js';
+import startGame from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -25,5 +25,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  game(description, generateRound);
+  startGame(description, generateRound);
 };

@@ -1,5 +1,5 @@
 import getRandomInt from '../utils.js';
-import game from '../index.js';
+import startGame from "../index";
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -13,5 +13,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  game(description, generateRound);
+  startGame(description, generateRound);
 };
