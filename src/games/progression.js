@@ -4,10 +4,10 @@ import startGame from '../index.js';
 const description = 'What number is missing in the progression?';
 
 const getProgression = (first, diff, count) => {
-  const arr = [first];
-
-  for (let i = 1; i < count; i += 1) {
-    arr.push(first + (diff * i));
+  const arr = [];
+  const maxValue = count * diff + first - diff;
+  for (let i = first; i <= maxValue; i += diff) {
+    arr.push(i);
   }
 
   return arr;
